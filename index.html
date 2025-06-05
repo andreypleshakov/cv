@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pleshakov Andrey CV</title>
+    <script type="module" src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+    <link rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💎</text></svg>">
+    <link rel="stylesheet" href="style.css"/>
+
+    <meta prefix="og:https://ogp.me/ns" property="og:title" content="Pleshakov Andrey CV | Frontend Developer"/>
+    <meta prefix="og:https://ogp.me/ns#" property="og:type" content="image/png"/>
+    <meta prefix="og:https://ogp.me/ns#" property="og:url" content="https://cv.andrey.online/"/>
+    <meta prefix="og:https://ogp.me/ns#" property="og:image" content="https://cv.andrey.online/assets/preview.png"/>
+    <meta prefix="og:https://ogp.me/ns#" property="og:image:width" content="656" />
+</head>
+<body>
+<div class="left">
+    <header>Pleshakov Andrey</header>
+    <div class="location shady">
+        <img src="/assets/map-pin.png" alt="Map pin"/>
+        Tbilisi, Georgia
+    </div>
+
+    <div class="section">
+        <div class="section-header">Contacts</div>
+        <div class="parallel-list">
+            <ul class="list-no-dot">
+                <li>
+                    <img src="assets/mail.png" alt="Email" class="icon"/>
+                    <span id="email">andrey.pleshakov.n@gmail.com</span>
+                    <svg class="copy" onclick="copyEmail()" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                         fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z"/>
+                    </svg>
+                    <span id="email-copy-notification" class="invisible">Copied!</span>
+                </li>
+                <li>
+                    <img src="assets/github.png" alt="GitHub" class="icon"/>
+                    <a href="https://github.com/andreypleshakov" target="_blank">GitHub</a>
+                </li>
+                <li>
+                    <img src="assets/linkedin.png" alt="LinkedIn" class="icon"/>
+                    <a href="https://www.linkedin.com/in/andrey-pleshakov-475032322/" target="_blank">LinkedIn</a>
+                </li>
+                <li class="position-relative">
+                    <img src="assets/telegram.png" alt="Telegram" class="icon"/>
+                    <a href="https://t.me/andreywhitily" target="_blank">Telegram</a>
+                    <img class="preferred-channel" src="assets/preferred-channel.png" alt="Preferred Channel"/>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-header">Key Skills</div>
+        <div class="parallel-list">
+            <ul>
+                <li>Javascript + Typescript</li> 
+                <li>React + Next.js</li>
+                <li>SolidJS</li>                
+            </ul>
+            <ul class="shady list-no-dot">
+                <li>3 years</li>
+                <li>3 years</li>
+                <li>1.5 years</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-header">Secondary Skills</div>
+        <ul>
+            <li>TailwindCSS</li>
+            <li>Redux</li>
+            <li>TanStack (React) Query</li>
+            <li>Linux</li>
+            <li>Git</li>
+            <li>MongoDB</li>
+            <li>REST, Websockets</li>
+            <li>Unit testing</li>
+            <li>Docker, Docker Compose</li>
+            <li>CI/CD</li>
+
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-header">Languages</div>
+        <div class="parallel-list">
+            <ul>
+                <li>Russian</li>
+                <li>English</li>
+            </ul>
+            <ul class="shady list-no-dot">
+                <li>Native</li>
+                <li>Professional</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="right">
+    <header>
+        Frontend Developer
+        <div class="download">
+            <div id="download-button" onclick="showDownloadOptions()">
+                <div>Download CV</div>
+                <img src="assets/blue-arrow.png" alt="Arrow"/>
+            </div>
+            <ul id="download-options" class="list-no-dot">
+                <li onclick="download('cv.pdf')">
+                    Download as .pdf
+                    <img class="icon" src="assets/black-download.png" alt="Download"/>
+                </li>
+                <li onclick="download('cv.png')">
+                    Download as .png
+                    <img class="icon" src="assets/black-download.png" alt="Download"/>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="section">
+        <div class="section-header">Work experience</div>
+
+        <div class="job">
+            <a class="company" href="https://t.me/ton_portfel" target="_blank">Portfel</a>
+            <span class="dates">June 2024 - Present</span>
+            <div class="position">Frontend Developer</div>
+            <div class="company-description">
+                The first portfolio tracker on TON blockchain.
+            </div>
+            <ul>
+                <li>Developed a real-time interface to fetch and visualize TON blockchain transactions, including NFT and Jetton transfers</li>
+                <li>Built core UI using SolidJS + TailwindCSS with responsive, adaptive layouts</li>
+                <li>Revived automatic testing, added code style linter, set it all up in Gitlab CI/CD</li>
+                <li>Connected backend APIs; built a subscription system using TON APIs, webhooks, and a Telegram bot</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <a class="company" href="https://atls.team" target="_blank">Atlantis United LLC</a>
+            <span class="dates">Jan 2023 - June 2024</span>
+            <div class="position">Frontend Developer</div>
+            <div class="company-description">
+                Atlantis United is a team of engineers and designers building digital platforms, customer services, and SaaS solutions for small and medium businesses.</div>
+            <ul>
+                <li>Developed reusable UI components with React, used SSR via Next.js</li>
+                <li>Wrote clean TypeScript/JavaScript; used Git Flow for organized collaboration</li>
+                <li>Set up CI/CD pipelines; worked closely with designers and backend developers to ship user-focused features</li>
+                <li>Used TanStack Query to manage asynchronous state efficiently, handling caching, background updates, and server sync with a MongoDB-based backend</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
